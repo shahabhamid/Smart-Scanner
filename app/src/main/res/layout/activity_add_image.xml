@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.AddImage">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/AI_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="653dp"
+        android:layout_gravity="top"
+        android:layout_margin="5sp"
+        tools:listitem="@layout/sample_add_image">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/AI_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8sp"
+            android:clickable="true"
+            android:tint="#FFFFFF"
+            app:backgroundTint="#03A9F4"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_menu_share" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/AI_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8sp"
+            android:clickable="true"
+            android:tint="#FFFFFF"
+            app:backgroundTint="#03A9F4"
+            app:fabSize="normal"
+            app:rippleColor="#2196F3"
+            app:srcCompat="@drawable/ic_menu_camera" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/AI_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8sp"
+            android:clickable="true"
+            android:tint="#FFFFFF"
+            app:backgroundTint="#03A9F4"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_menu_gallery" />
+
+    </TableRow>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

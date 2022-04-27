@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/Hcapture"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5sp"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="15sp"
+            android:layout_weight=".4"
+            android:background="#00000000"
+            android:src="@drawable/ic_baseline_create_new_folder_24"
+            android:tint="#03A9F4" />
+
+        <ImageButton
+            android:id="@+id/H_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginEnd="-39dp"
+            android:layout_marginRight="-39dp"
+            android:layout_weight=".4"
+            android:background="#00000000"
+            android:src="@drawable/ic_baseline_search_24"
+            android:tint="#03A9F4" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:layout_weight=".4"
+            android:background="#00000000"
+            android:src="@drawable/ic_baseline_check_box_24"
+            android:tint="#03A9F4" />
+
+        <ImageButton
+            android:id="@+id/sortButton"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_margin="5sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:layout_weight=".4"
+            android:background="#00000000"
+            android:src="@drawable/ic_baseline_sort_24"
+            android:tint="#03A9F4" />
+
+    </TableRow>
+
+    <EditText
+        android:id="@+id/searchpdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:ems="10"
+        android:hint="Search"
+        android:inputType="textPersonName" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/H_recyclarView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5sp"
+        tools:listitem="@layout/sample_view_pdfs"/>
+
+</LinearLayout>

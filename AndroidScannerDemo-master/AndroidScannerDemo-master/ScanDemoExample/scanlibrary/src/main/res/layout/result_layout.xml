@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <android.widget.Toolbar
+        android:id="@+id/resultToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:minHeight="?android:attr/actionBarSize"
+        android:theme="?android:attr/actionBarTheme"
+        tools:targetApi="lollipop" />
+
+
+    <ImageView
+        android:id="@+id/scannedImage"
+        android:layout_width="match_parent"
+        android:layout_height="576dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/scanPadding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:progress="50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" />
+
+        <LinearLayout
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/original"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_perm_media_24"
+                android:tint="#FFFFFF"
+                app:backgroundTint="#2196F3"
+                app:fabSize="normal" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/shapness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_offline_bolt_24"
+                android:tint="#FFFFFF"
+                app:backgroundTint="#2196F3"
+                app:fabSize="normal" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/magicColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_brush_24"
+                android:tint="#FFFFFF"
+                app:backgroundTint="#2196F3"
+                app:fabSize="normal" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/grayMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/ic_gray"
+                android:tint="#FFFFFF"
+                app:backgroundTint="#2196F3"
+                app:fabSize="normal" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/BWMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_brightness_medium_24"
+                android:tint="#FFFFFF"
+                app:backgroundTint="#2196F3"
+                app:fabSize="normal" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

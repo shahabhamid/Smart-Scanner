@@ -1,0 +1,4 @@
+include ':scanlibrary'
+include ':app'
+project(':scanlibrary').projectDir = new File(rootDir, 'AndroidScannerDemo-master/AndroidScannerDemo-master/ScanDemoExample/scanlibrary/')
+rootProject.name = "Smart Scanner"
